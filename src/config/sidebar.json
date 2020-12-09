@@ -1,0 +1,184 @@
+{
+    "admin": [
+        {
+            "header": true,
+            "title": "ADMINISTRATOR"
+        },
+        {
+            "title": "Dashboard",
+            "icon": "fas fa-tachometer-alt",
+            "route": {
+                "name": "dashboard"
+            }
+        },
+        {
+            "title": "Master data",
+            "icon": "fa fa-wrench",
+            "items": [
+                {
+                    "title": "Bank Soal",
+                    "icon": "fa fa-circle-o",
+                    "selected_on": [
+                        "question_form",
+                        "question_detail",
+                        "question_add"
+                    ],
+                    "route": {
+                        "name": "master_questions"
+                    }
+                },
+                {
+                    "title": "Jadwal Ujian",
+                    "icon": "fa fa-circle-o",
+                    "selected_on": [
+                        "schedule_form",
+                        "schedule_add",
+                        "schedule_detail",
+                        "schedule_assign",
+                        "schedule_detail_peserta"
+                    ],
+                    "route": {
+                        "name": "master_schedules"
+                    }
+                },
+                {
+                    "title": "Pengguna",
+                    "icon": "fa fa-circle-o",
+                    "selected_on": [
+                        "pengguna_add",
+                        "pengguna_form",
+                        "pengguna_detail"
+                    ],
+                    "route": {
+                        "name": "master_pengguna"
+                    }
+                },
+                {
+                    "title": "Peserta",
+                    "icon": "fa fa-circle-o",
+                    "selected_on": [
+                        "peserta_form",
+                        "peserta_detail",
+                        "peserta_add"
+                    ],
+                    "route": {
+                        "name": "master_peserta"
+                    }
+                }
+            ]
+        }
+    ],
+    "user": [
+        {
+            "header": true,
+            "title": "PESERTA"
+        },
+        {
+            "title": "Dashboard",
+            "icon": "fas fa-tachometer-alt",
+            "route": {
+                "name": "dashboard"
+            }
+        },
+        {
+            "title": "Jadwal Ujian",
+            "icon": "fa fa-calendar",
+            "route": {
+                "name": "exam_schedule"
+            }
+        },
+        {
+            "title": "Jadwal Ujian (List View)",
+            "icon": "fa fa-calendar",
+            "route": {
+                "name": "exam_schedule_list"
+            }
+        }
+    ],
+    "developer": [
+        {
+            "title": "DOCUMENTATION",
+            "header": true
+        },
+        {
+            "title": "Examples",
+            "icon": "fa fa-book",
+            "icon_right": "label label-warning",
+            "icon_right_text": "Dev Only",
+            "items": [
+                {
+                    "href": "./admin-lte",
+                    "title": "admin-lte",
+                    "icon": "fa fa-files-o",
+                    "target": "_blank"
+                },
+                {
+                    "title": "Datatable",
+                    "icon": "fa fa-table",
+                    "items": [
+                        {
+                            "title": "Static Table",
+                            "route": {
+                                "name": "datatable_static"
+                            }
+                        },
+                        {
+                            "title": "Dynamic Table",
+                            "route": {
+                                "name": "datatable_dynamic"
+                            }
+                        },
+                        {
+                            "title": "Clickable Row",
+                            "route": {
+                                "name": "datatable_click"
+                            }
+                        },
+                        {
+                            "title": "Partial Config",
+                            "route": {
+                                "name": "datatable_partial"
+                            }
+                        },
+                        {
+                            "title": "Ajax",
+                            "route": {
+                                "name": "datatable_ajax"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "Box",
+                    "icon": "fa fa-th",
+                    "items": [
+                        {
+                            "title": "Simple Box",
+                            "route": {
+                                "name": "box_simple"
+                            }
+                        },
+                        {
+                            "title": "Box Header",
+                            "route": {
+                                "name": "box_header"
+                            }
+                        },
+                        {
+                            "title": "Box Footer",
+                            "route": {
+                                "name": "box_footer"
+                            }
+                        },
+                        {
+                            "title": "Small Box",
+                            "route": {
+                                "name": "box_small"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
