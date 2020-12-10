@@ -16,32 +16,6 @@
             "icon": "fa fa-wrench",
             "items": [
                 {
-                    "title": "Bank Soal",
-                    "icon": "fa fa-circle-o",
-                    "selected_on": [
-                        "question_form",
-                        "question_detail",
-                        "question_add"
-                    ],
-                    "route": {
-                        "name": "master_questions"
-                    }
-                },
-                {
-                    "title": "Jadwal Ujian",
-                    "icon": "fa fa-circle-o",
-                    "selected_on": [
-                        "schedule_form",
-                        "schedule_add",
-                        "schedule_detail",
-                        "schedule_assign",
-                        "schedule_detail_peserta"
-                    ],
-                    "route": {
-                        "name": "master_schedules"
-                    }
-                },
-                {
                     "title": "Pengguna",
                     "icon": "fa fa-circle-o",
                     "selected_on": [
@@ -51,18 +25,6 @@
                     ],
                     "route": {
                         "name": "master_pengguna"
-                    }
-                },
-                {
-                    "title": "Peserta",
-                    "icon": "fa fa-circle-o",
-                    "selected_on": [
-                        "peserta_form",
-                        "peserta_detail",
-                        "peserta_add"
-                    ],
-                    "route": {
-                        "name": "master_peserta"
                     }
                 }
             ]

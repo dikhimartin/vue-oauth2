@@ -8,13 +8,16 @@
             <p class="login-box-msg">Sign in to start your session</p>
 
             <form @submit.prevent="submit">
-                <div class="form-group has-feedback" :class="{'has-error': error.email}">
+                <div class="for`m-group has-feedback" :class="{'has-error': error.email}">
                     <input type="email" class="form-control" placeholder="Email" v-model="form.email">
                     <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
                     <p class="help help-block" v-if="error.email">
                         <i class="fa fa-info-circle"></i> {{ error.email }}
                     </p>
                 </div>
+
+                <br/>
+                
                 <div class="form-group has-feedback" :class="{'has-error': error.password}">
                     <input type="password" class="form-control" placeholder="Password" v-model="form.password">
                     <span class="glyphicon glyphicon-lock form-control-feedback"></span>
@@ -37,15 +40,6 @@
                 </div>
             </form>
 
-            <!-- <div class="social-auth-links text-center">
-                    <p>- OR -</p>
-                    <a href="#" class="btn btn-block btn-social btn-facebook btn-flat"><i class="fa fa-facebook"></i> Sign in using
-                        Facebook
-                    </a>
-                    <a href="#" class="btn btn-block btn-social btn-google btn-flat"><i class="fa fa-google-plus"></i> Sign in using
-                        Google+
-                    </a>
-                </div> -->
                 <router-link :to="{name: 'forgot_password'}">I forgot my password</router-link><br>
                 <router-link :to="{name: 'register' }">Register a new membership</router-link>
         </div>
