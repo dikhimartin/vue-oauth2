@@ -1,4 +1,6 @@
 const Dashboard = () => import('@pages/Dashboard.vue')
+const Profile = () => import('@pages/Profile.vue')
+const ProfileForm = () => import('@pages/ProfileForm.vue')
 const Pengguna = () => import('@pages/Pengguna.vue')
 const PenggunaAdd = () => import('@pages/PenggunaAdd.vue')
 const PenggunaDetail = () => import('@pages/PenggunaDetail.vue')
@@ -13,11 +15,25 @@ module.exports = [
         meta: {
             title: 'Dashboard'
         }
-    }, {
+    },{
+        path: '/profile',
+        name: 'profile',
+        component: Profile,
+        meta: {
+            title: 'Profile'
+        }
+    },{
+        path: '/profile/form',
+        name: 'profile_form',
+        component: ProfileForm,
+        meta: {
+            title: 'Ubah Profile'
+        }
+    },{
         path: '/examples',
         component: { render: h => h('router-view') },
         children: Examples
-   },{
+    },{
         path: '/master/pengguna',
         name: 'master_pengguna',
         component: Pengguna,
