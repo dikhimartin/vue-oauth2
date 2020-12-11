@@ -3,11 +3,13 @@
         <router-view name="navbar"></router-view>
         <router-view name="sidebar"></router-view>
         <!-- Content Wrapper. Contains page content -->
-        <div class="content-wrapper">
+        <div class="page-wrapper">
             <router-view name="header"></router-view>
             <!-- Main content -->
             <section class="content">
-                <router-view></router-view>
+              <div class="container-fluid">
+                  <router-view></router-view>
+              </div>
             </section>
         </div>
         <!-- /.content-wrapper -->

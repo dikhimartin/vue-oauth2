@@ -61,15 +61,10 @@
 
               <ul class="navbar-nav my-lg-0">
                   <li class="nav-item">
-                      <body onload="startTime()">
-                            <div class="clockdate-wrapper">
-                              <div class="text-white">10:10</div>
-                              <div class="text-white">1 January 2021</div>
-                            </div>
-                      </body>
+                      <div class="realtime-clock">10 : 10 <span>AM</span></div>
+                      <div class="realtime-date">Friday, 11 December 2020</div>
                   </li>
               </ul>
-
         </div>
     </nav>
   </header>

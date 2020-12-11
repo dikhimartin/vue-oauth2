@@ -17,21 +17,22 @@ import "admin-lte/bower_components/font-awesome/css/font-awesome.css";
 // css
 import('./assets/css/style.css')
 import('./assets/css/colors/blue.css')
+import('./assets/css/realtime-clock.css')
 import('./assets/plugins/bootstrap/css/bootstrap.min.css')
 import('./assets/plugins/toast-master/css/jquery.toast.css')
 import('./assets/plugins/sweetalert/sweetalert.css')
 import('./assets/plugins/nestable/nestable.css')
 
 // javascript
-import('./assets/plugins/jquery/jquery.min.js')
 import("./assets/plugins/bootstrap/js/popper.min.js")
 import("./assets/plugins/bootstrap/js/bootstrap.min.js")
 import("./assets/js/jquery.slimscroll.js")
 import("./assets/js/waves.js")
 import("./assets/js/sidebarmenu.js")
+import("./assets/js/custom.min.js")
+
 import("./assets/plugins/sticky-kit-master/dist/sticky-kit.min.js")
 import("./assets/plugins/sparkline/jquery.sparkline.min.js")
-import("./assets/js/custom.min.js")
 import("./assets/plugins/sweetalert/sweetalert.min.js")
 import("./assets/plugins/sweetalert/jquery.sweet-alert.custom.js")
 

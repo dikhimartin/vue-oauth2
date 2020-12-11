@@ -1,6 +1,6 @@
 const webpack = require('webpack')
 const express = require('express')
-const path = require('path')
+const path    = require('path')
 
 module.exports = {
     outputDir: path.resolve(__dirname, process.env.BUILD_DIR || '../backend/public'),

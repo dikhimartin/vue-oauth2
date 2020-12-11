@@ -1,11 +1,33 @@
 <template>
   <div v-if="user.role === 'admin'">
-    <router-link class="btn btn-success" :to="{ name: 'pengguna_add' }"
-      ><span class="fa fa-plus"></span> Add Pengguna</router-link
-    >
-    <br>
-    <br>
-    <datatable :config="config" @click="onRowClick" />
+    
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="card">
+            <div class="card-header bg-info text-white">
+              <h4 class="card-title m-b-0 text-white">List Data</h4>
+            </div>
+            <div class="card-body">
+              <div class="row">
+                  <div class="col-md-12">
+                    <div class="button-group">
+                        <router-link class="btn btn-info btn-sm waves-light" :to="{ name: 'pengguna_add' }"
+                          ><span class="btn-label"><i class="fa fa-plus"></i></span>&nbsp;Add New
+                        </router-link>
+                    </div>
+                  </div>
+              </div>
+              <p style="margin-bottom: 20px;"></p>
+              <div class="table-responsive">
+                  <table class="table table-hover">
+                     <datatable :config="config" @click="onRowClick" />
+                  </table>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
   </div>
 </template>
 
