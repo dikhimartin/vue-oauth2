@@ -5,7 +5,7 @@
           <div class="user-profile">
               <div class="profile-img">
                   <img
-                    src="~admin-lte/dist/img/user3-128x128.jpg"
+                    src="/img/avatar.webp"
                     v-if="!user_image"
                     class="img-circle"
                     alt="User Image"
@@ -21,8 +21,8 @@
                   </router-link
                 ></h5>
                   <h6 class="text-muted">Online</h6>
-                  <a href="javascript:void:0" class="dropdown-toggle u-dropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"><i class="mdi mdi-settings"></i></a>
-                  <a href="javascript:void:0"><router-link :to="{ name: 'login' }" data-toggle="tooltip" title="Logout"><i class="mdi mdi-power"></i></router-link ></a>
+                  <a href="javascript:void(0)" class="dropdown-toggle u-dropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"><i class="mdi mdi-settings"></i></a>
+                  <a href="javascript:void(0)"><router-link :to="{ name: 'login' }" data-toggle="tooltip" title="Logout"><i class="mdi mdi-power"></i></router-link ></a>
                   
                   <div class="dropdown-menu animated flipInY">
                       <a href="javascript:void:0" class="dropdown-item"><i class="ti-user"></i> My Profile</a>

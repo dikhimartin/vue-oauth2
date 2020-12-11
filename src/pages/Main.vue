@@ -1,5 +1,5 @@
 <template>
-    <div class="wrapper">
+    <div id="main-wrapper" class="wrapper">
         <router-view name="navbar"></router-view>
         <router-view name="sidebar"></router-view>
         <!-- Content Wrapper. Contains page content -->
@@ -19,7 +19,7 @@
 
 <script>
 export default {
-  data() {
+  data() { 
     return {
       user: [],
       //user_image: "",

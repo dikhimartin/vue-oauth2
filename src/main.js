@@ -22,19 +22,20 @@ import('./assets/plugins/bootstrap/css/bootstrap.min.css')
 import('./assets/plugins/toast-master/css/jquery.toast.css')
 import('./assets/plugins/sweetalert/sweetalert.css')
 import('./assets/plugins/nestable/nestable.css')
-
-// javascript
-import("./assets/plugins/bootstrap/js/popper.min.js")
 import("./assets/plugins/bootstrap/js/bootstrap.min.js")
-import("./assets/js/jquery.slimscroll.js")
-import("./assets/js/waves.js")
-import("./assets/js/sidebarmenu.js")
 import("./assets/js/custom.min.js")
 
-import("./assets/plugins/sticky-kit-master/dist/sticky-kit.min.js")
-import("./assets/plugins/sparkline/jquery.sparkline.min.js")
-import("./assets/plugins/sweetalert/sweetalert.min.js")
-import("./assets/plugins/sweetalert/jquery.sweet-alert.custom.js")
+// eslint-disable-line
+// eslint-disable-next-line
+// javascript
+// import("./assets/plugins/bootstrap/js/popper.min.js")
+// import("./assets/js/jquery.slimscroll.js")
+// import("./assets/js/waves.js")
+// import("./assets/js/sidebarmenu.js")
+// import("./assets/plugins/sticky-kit-master/dist/sticky-kit.min.js")
+// import("./assets/plugins/sparkline/jquery.sparkline.min.js")
+// import("./assets/plugins/sweetalert/sweetalert.min.js")
+// import("./assets/plugins/sweetalert/jquery.sweet-alert.custom.js")
 
 import routers from '@config/router'
 import Api from '@services/Api'
@@ -42,7 +43,6 @@ import '@config/components'
 
 Vue.use(VueRouter)
 Vue.use(Vuex)
-
 
 const router = new VueRouter(routers)
 const store  = new Vuex.Store({

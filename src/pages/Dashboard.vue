@@ -1,17 +1,11 @@
 <template>
-  <div>
-    <div v-if="this.user.role != 'admin'" class="box box-primary">
-      <div class="box-header with-border">
-        <h3 class="box-title">Selamat datang!</h3>
-      </div>
-      <div class="box-body">
-        <h1>{{ env.app_name }}</h1>
-      </div>
+    <div class="row">
+        <div class="col-lg-12 col-md-12">
+            <div class="alert alert-success"> <i class="ti-user"></i>&nbsp;&nbsp;<strong>Welcome {{user.fullname}}</strong>
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"> <span aria-hidden="true">×</span> </button>
+            </div>
+        </div>
     </div>
-    <div v-if="this.user.role === 'admin'">
-     
-    </div>
-  </div>
 </template>
 
 <script>

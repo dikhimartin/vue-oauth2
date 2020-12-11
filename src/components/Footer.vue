@@ -1,5 +1,5 @@
 <template>
-    <footer class="main-footer">
+    <footer class="footer">
         <div class="pull-right hidden-xs" v-if="version">
             <b>Version</b> {{ version }}
         </div>

@@ -3,10 +3,6 @@ const DatatableDynamic = () => import('@pages/examples/DatatableDynamic.vue')
 const DatatableClick = () => import('@pages/examples/DatatableClick.vue')
 const DatatablePartial = () => import('@pages/examples/DatatablePartial.vue')
 const DatatableAjax = () => import('@pages/examples/DatatableAjax.vue')
-const BoxSimple = () => import('@pages/examples/BoxSimple.vue')
-const BoxHeader = () => import('@pages/examples/BoxHeader.vue')
-const BoxFooter = () => import('@pages/examples/BoxFooter.vue')
-const BoxSmall = () => import('@pages/examples/BoxSmall.vue')
 
 module.exports = [
     {
@@ -48,38 +44,6 @@ module.exports = [
         meta: {
             title: 'Ajax',
             subtitle: '<code>source: src/pages/examples/DatatableAjax.vue</code>'
-        }
-    }, {
-        path: "box/simple",
-        name: "box_simple",
-        component: BoxSimple,
-        meta: {
-            title: 'Simple Box',
-            subtitle: '<code>source: src/pages/examples/BoxSimple.vue</code>'
-        }
-    }, {
-        path: "box/header",
-        name: "box_header",
-        component: BoxHeader,
-        meta: {
-            title: 'Box Header',
-            subtitle: '<code>source: src/pages/examples/BoxHeader.vue</code>'
-        }
-    }, {
-        path: "box/footer",
-        name: "box_footer",
-        component: BoxFooter,
-        meta: {
-            title: 'Box Footer',
-            subtitle: '<code>source: src/pages/examples/BoxFooter.vue</code>'
-        }
-    }, {
-        path: "box/small",
-        name: "box_small",
-        component: BoxSmall,
-        meta: {
-            title: 'Small Box',
-            subtitle: '<code>source: src/pages/examples/BoxSmall.vue</code>'
         }
     }
 ]

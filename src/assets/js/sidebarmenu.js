@@ -5,6 +5,7 @@ Email: niravjoshi87@gmail.com
 File: js
 */
 (function (global, factory) {
+  var define;
   if (typeof define === "function" && define.amd) {
     define(['jquery'], factory);
   } else if (typeof exports !== "undefined") {

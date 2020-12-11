@@ -19,7 +19,7 @@
           <img
             v-else
             class="profile-user-img img-responsive img-circle"
-            src="~admin-lte/dist/img/user3-128x128.jpg"
+            src="dist/img/user3-128x128.jpg"
             alt="User profile picture"
           />
 

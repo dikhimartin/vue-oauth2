@@ -65,77 +65,39 @@
         {
             "title": "Examples",
             "icon": "fa fa-book",
-            "icon_right": "label label-warning",
-            "icon_right_text": "Dev Only",
             "items": [
                 {
-                    "href": "./admin-lte",
-                    "title": "admin-lte",
-                    "icon": "fa fa-files-o",
-                    "target": "_blank"
-                },
-                {
-                    "title": "Datatable",
+                    "title": "&nbsp;&nbsp;Datatable",
                     "icon": "fa fa-table",
                     "items": [
                         {
-                            "title": "Static Table",
+                            "title": "&nbsp;Static Table",
                             "route": {
                                 "name": "datatable_static"
                             }
                         },
                         {
-                            "title": "Dynamic Table",
+                            "title": "&nbsp;Dynamic Table",
                             "route": {
                                 "name": "datatable_dynamic"
                             }
                         },
                         {
-                            "title": "Clickable Row",
+                            "title": "&nbsp;Clickable Row",
                             "route": {
                                 "name": "datatable_click"
                             }
                         },
                         {
-                            "title": "Partial Config",
+                            "title": "&nbsp;Partial Config",
                             "route": {
                                 "name": "datatable_partial"
                             }
                         },
                         {
-                            "title": "Ajax",
+                            "title": "&nbsp;Ajax",
                             "route": {
                                 "name": "datatable_ajax"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "title": "Box",
-                    "icon": "fa fa-th",
-                    "items": [
-                        {
-                            "title": "Simple Box",
-                            "route": {
-                                "name": "box_simple"
-                            }
-                        },
-                        {
-                            "title": "Box Header",
-                            "route": {
-                                "name": "box_header"
-                            }
-                        },
-                        {
-                            "title": "Box Footer",
-                            "route": {
-                                "name": "box_footer"
-                            }
-                        },
-                        {
-                            "title": "Small Box",
-                            "route": {
-                                "name": "box_small"
                             }
                         }
                     ]
