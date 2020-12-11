@@ -1,43 +1,51 @@
 <template>
-  <aside class="main-sidebar">
-    <section class="sidebar">
-      <div class="user-panel">
-        <div class="pull-left image">
-          <img
-            src="~admin-lte/dist/img/user3-128x128.jpg"
-            v-if="!user_image"
-            class="img-circle"
-            alt="User Image"
-          />
-          <img
-            :src="user_image"
-            v-if="user_image"
-            class="img-circle"
-            alt="User Image"
-          />
-        </div>
-        <div class="pull-left info">
-          <p>
-            <router-link
-              :to="{ name: 'profile' }"
-              class="ellipsis capitalize"
-              >{{ user.fullname }}</router-link
-            >
-          </p>
-          <small>
-            <i class="fa fa-circle text-success"></i>
-            Online
-          </small>
-        </div>
-      </div>
-      <ul class="sidebar-menu" data-widget="tree">
-        <nav-item
-          v-for="(item, index) in items"
-          :key="index"
-          :item="item"
-        ></nav-item>
-      </ul>
-    </section>
+  <aside class="left-sidebar">
+    <div class="scroll-sidebar">
+      <section class="sidebar">
+          <div class="user-profile">
+              <div class="profile-img">
+                  <img
+                    src="~admin-lte/dist/img/user3-128x128.jpg"
+                    v-if="!user_image"
+                    class="img-circle"
+                    alt="User Image"
+                  />
+                  <div class="notify setpos"> <span class="heartbit"></span> <span class="point"></span> </div>
+              </div>
+              <div class="profile-text">
+                <h5>
+                  <router-link
+                  :to="{ name: 'profile' }"
+                  class="ellipsis capitalize"
+                  >{{ user.fullname }}
+                  </router-link
+                ></h5>
+                  <h6 class="text-muted">Online</h6>
+                  <a href="javascript:void:0" class="dropdown-toggle u-dropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"><i class="mdi mdi-settings"></i></a>
+                  <a href="javascript:void:0"><router-link :to="{ name: 'login' }" data-toggle="tooltip" title="Logout"><i class="mdi mdi-power"></i></router-link ></a>
+                  
+                  <div class="dropdown-menu animated flipInY">
+                      <a href="javascript:void:0" class="dropdown-item"><i class="ti-user"></i> My Profile</a>
+                      <div class="dropdown-divider"></div>
+                      <a href="javascript:void(0)" class="dropdown-item"><router-link :to="{ name: 'login' }" data-toggle="tooltip" title="Logout"></router-link><i class="fa fa-power-off"></i> Logout</a>
+                  </div>
+
+              </div>
+          </div>
+
+        <!-- Current Nav -->
+        <nav class="sidebar-nav">
+          <ul class="sidebar-menu" data-widget="tree">
+            <nav-item
+              v-for="(item, index) in items"
+              :key="index"
+              :item="item"
+            ></nav-item>
+          </ul>
+        </nav>
+        
+      </section>
+     </div>
   </aside>
 </template>
 

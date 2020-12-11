@@ -2,21 +2,21 @@
     "admin": [
         {
             "header": true,
-            "title": "ADMINISTRATOR"
+            "title": "<li class='nav-small-cap'>ADMINISTRATOR</li>"
         },
         {
             "title": "Dashboard",
-            "icon": "fas fa-tachometer-alt",
+            "icon": "mdi mdi-gauge",
             "route": {
                 "name": "dashboard"
             }
         },
         {
             "title": "Master data",
-            "icon": "fa fa-wrench",
+            "icon": "mdi mdi-arrange-send-backward",
             "items": [
                 {
-                    "title": "Pengguna",
+                    "title": "&nbsp;&nbsp;Pengguna",
                     "icon": "fa fa-circle-o",
                     "selected_on": [
                         "pengguna_add",
@@ -33,7 +33,7 @@
     "user": [
         {
             "header": true,
-            "title": "PESERTA"
+            "title": "<li class='nav-small-cap'>PESERTA</li>"
         },
         {
             "title": "Dashboard",
@@ -59,7 +59,7 @@
     ],
     "developer": [
         {
-            "title": "DOCUMENTATION",
+            "title": "<li class='nav-small-cap'>DOCUMENTATION</li>",
             "header": true
         },
         {

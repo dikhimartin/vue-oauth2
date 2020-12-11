@@ -8,35 +8,43 @@ import moment from "moment";
 import Pace from "pace-js";
 import bootbox from "bootbox";
 import env from "@config/environment";
-import "select2/dist/css/select2.css";
-import "bootstrap/dist/css/bootstrap.css";
+
 import "icheck-bootstrap";
 import "ionicons/dist/css/ionicons.css";
 import "@fortawesome/fontawesome-free/css/all.css";
 import "admin-lte/bower_components/font-awesome/css/font-awesome.css";
-import "bootstrap/dist/js/bootstrap.js";
-import "admin-lte/dist/css/AdminLTE.css";
-import "admin-lte/dist/css/skins/_all-skins.min.css";
-import "admin-lte/dist/js/adminlte.js";
-// import 'icheck'
-// import 'icheck/skins/all.css'
-import "select2/dist/js/select2.full.js";
-import "chart.js/dist/Chart.bundle.js";
-import "@assets/css/style.css";
+
+// css
+import('./assets/css/style.css')
+import('./assets/css/colors/blue.css')
+import('./assets/plugins/bootstrap/css/bootstrap.min.css')
+import('./assets/plugins/toast-master/css/jquery.toast.css')
+import('./assets/plugins/sweetalert/sweetalert.css')
+import('./assets/plugins/nestable/nestable.css')
+
+// javascript
+import('./assets/plugins/jquery/jquery.min.js')
+import("./assets/plugins/bootstrap/js/popper.min.js")
+import("./assets/plugins/bootstrap/js/bootstrap.min.js")
+import("./assets/js/jquery.slimscroll.js")
+import("./assets/js/waves.js")
+import("./assets/js/sidebarmenu.js")
+import("./assets/plugins/sticky-kit-master/dist/sticky-kit.min.js")
+import("./assets/plugins/sparkline/jquery.sparkline.min.js")
+import("./assets/js/custom.min.js")
+import("./assets/plugins/sweetalert/sweetalert.min.js")
+import("./assets/plugins/sweetalert/jquery.sweet-alert.custom.js")
+
 import routers from '@config/router'
 import Api from '@services/Api'
 import '@config/components'
-if (process.env.NODE_ENV == 'development') {
-    require('./assets/css/style.development.css')
-} else {
-    require('./assets/css/style.production.css')
-}
 
 Vue.use(VueRouter)
 Vue.use(Vuex)
 
+
 const router = new VueRouter(routers)
-const store = new Vuex.Store({
+const store  = new Vuex.Store({
     state: {
         user: {
             name: ""
