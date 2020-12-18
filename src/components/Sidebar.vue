@@ -5,7 +5,7 @@
           <div class="user-profile">
               <div class="profile-img">
                   <img
-                    src="/img/avatar.webp"
+                    src=".././assets/images/users/avatar.webp"
                     v-if="!user_image"
                     class="img-circle"
                     alt="User Image"

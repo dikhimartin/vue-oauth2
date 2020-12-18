@@ -1,4 +1,4 @@
-# vue-admin-lte-2
+# vue-adminpress
 
 ## Project setup
 ```

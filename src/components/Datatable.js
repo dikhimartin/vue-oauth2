@@ -2,50 +2,52 @@ import Vue from 'vue'
 // import 'datatables.net-bs4/css/dataTables.bootstrap4.css'
 // import 'datatables.net-fixedheader-bs4/css/fixedHeader.bootstrap4.css'
 // import 'datatables.net-colreorder-bs4/css/colReorder.bootstrap4.css'
-import 'datatables.net-bs/css/dataTables.bootstrap.css'
-import 'datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.css'
-import 'datatables.net-colreorder-bs/css/colReorder.bootstrap.css'
+// import 'datatables.net-bs/css/dataTables.bootstrap.css'
+// import 'datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.css'
+// import 'datatables.net-colreorder-bs/css/colReorder.bootstrap.css'
 
-import 'datatables.net'
-import 'jszip';
-import 'pdfmake';
-import 'datatables.net-bs';
-import 'datatables.net-buttons-bs';
-import 'datatables.net-buttons/js/buttons.colVis.js';
-import 'datatables.net-buttons/js/buttons.flash.js';
-import 'datatables.net-buttons/js/buttons.html5.js';
-import 'datatables.net-buttons/js/buttons.print.js';
-import 'datatables.net-colreorder-bs';
-import 'datatables.net-fixedcolumns-bs';
-import 'datatables.net-fixedheader-bs';
-import 'datatables.net-keytable-bs';
-import 'datatables.net-responsive-bs';
-import 'datatables.net-rowgroup-bs';
-import 'datatables.net-rowreorder-bs';
-import 'datatables.net-scroller-bs';
+// import 'datatables.net'
+// import 'jszip';
+// import 'pdfmake';
+// import 'datatables.net-bs';
+// import 'datatables.net-buttons-bs';
+// import 'datatables.net-buttons/js/buttons.colVis.js';
+// import 'datatables.net-buttons/js/buttons.flash.js';
+// import 'datatables.net-buttons/js/buttons.html5.js';
+// import 'datatables.net-buttons/js/buttons.print.js';
+// import 'datatables.net-colreorder-bs';
+// import 'datatables.net-fixedcolumns-bs';
+// import 'datatables.net-fixedheader-bs';
+// import 'datatables.net-keytable-bs';
+// import 'datatables.net-responsive-bs';
+// import 'datatables.net-rowgroup-bs';
+// import 'datatables.net-rowreorder-bs';
+// import 'datatables.net-scroller-bs';
 
 // import 'datatables.net-autofill-bs';
 // import 'datatables.net-searchpanes-bs';
 // import 'datatables.net-select-bs';
 
-// import DataTable from 'datatables.net'
-// import 'jszip'
-// import 'pdfmake'
-// import 'datatables.net-bs4'
-// import 'datatables.net-buttons-bs4'
-// import 'datatables.net-buttons/js/buttons.colVis.js'
-// import 'datatables.net-buttons/js/buttons.flash.js'
-// import 'datatables.net-buttons/js/buttons.html5.js'
-// import 'datatables.net-buttons/js/buttons.print.js'
-// import 'datatables.net-colreorder-bs4'
-// import 'datatables.net-fixedcolumns-bs4'
-// import 'datatables.net-fixedheader'
-// import 'datatables.net-fixedheader-bs4'
-// import 'datatables.net-responsive-bs4'
-// import 'datatables.net-rowgroup-bs4'
-// import 'datatables.net-rowreorder-bs4'
-// import 'datatables.net-scroller-bs4'
+
+// import DataTable from 'datatables.net-bs4'
+import 'jszip'
+import 'pdfmake'
+import 'datatables.net-bs4'
+import 'datatables.net-buttons-bs4'
+import 'datatables.net-buttons/js/buttons.colVis.js'
+import 'datatables.net-buttons/js/buttons.flash.js'
+import 'datatables.net-buttons/js/buttons.html5.js'
+import 'datatables.net-buttons/js/buttons.print.js'
+import 'datatables.net-colreorder-bs4'
+import 'datatables.net-fixedcolumns-bs4'
+import 'datatables.net-fixedheader'
+import 'datatables.net-fixedheader-bs4'
+import 'datatables.net-responsive-bs4'
+import 'datatables.net-rowgroup-bs4'
+import 'datatables.net-rowreorder-bs4'
+import 'datatables.net-scroller-bs4'
 // import 'datatables.net-select-bs4'
+
 const {console} = window
 $.fn.dataTable.ext.errMode = 'none'
 
@@ -88,19 +90,19 @@ for (var i in props) {
 props.push('config')
 const baseConfig = () => {
     return {
-        pagingType: 'full_numbers',
+        pagingType: 'simple_numbers',
         colReorder: true,
         fixedHeader: false,
         responsive: true,
         destroy: true,
         stateSave: true,
         stateDuration: -1,
-        serverSide: false,
+        serverSide: true,
         processing: true,
         keys: true,
         displayLength: 10,
         displayStart: 0,
-        autoWidth: false,
+        autoWidth: true,
         language: {
             paginate: {
                 first: '&laquo;',
@@ -109,15 +111,15 @@ const baseConfig = () => {
                 last: '&raquo;'
             },
             // search: "Cari",
-            // info: "Menampilkan _START_ s/d _END_ dari _TOTAL_ data",
+            info: "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Menampilkan _START_ s/d _END_ dari _TOTAL_ data",
             // infoEmpty: "Menampilkan 0 s/d 0 dari 0 data",
             infoFiltered: "",
             loadingRecords: "Loading ...",
             // loadingRecords: "Memuat data...",
             processing: "<i class='fa fa-spin fa-circle-notch'></i> Loading...",
             // processing: "<i class='fa fa-spin fa-circle-notch'></i> Memuat data...",
-            // zeroRecords: "Tidak ada data",
-            // emptyTable: "Tidak ada data ditemukan",
+            zeroRecords: "Tidak ada data",
+            emptyTable: "Tidak ada data ditemukan",
             lengthMenu: "_MENU_"
         },
         select: {
@@ -582,4 +584,5 @@ const DataTable = {
 
 Vue.component('data-tables', DataTable)
 Vue.component('datatable', DataTable)
+
 export default DataTable
